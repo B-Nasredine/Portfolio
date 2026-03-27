@@ -23,25 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
 
-  /* ── BARRES DE COMPÉTENCES ── */
-  const barObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.querySelectorAll('.skill-fill').forEach(bar => {
-            const width = parseFloat(bar.dataset.width) / 100;
-            bar.style.transform = `scaleX(${width})`;
-            bar.classList.add('animated');
-          });
-        }
-      });
-    },
-    { threshold: 0.3 }
-  );
-
-  document.querySelectorAll('.card').forEach(card => barObserver.observe(card));
-
-
   /* ── NAVIGATION ACTIVE AU SCROLL ── */
   const sections = document.querySelectorAll('section[id]');
   const navLinks  = document.querySelectorAll('.nav-links a');
