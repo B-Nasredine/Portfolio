@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — BTS SIO</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/veille.css">
+</head>
+<body>
+
+  <!-- ── NAVIGATION ── -->
+  <nav>
+    <div class="nav-logo">port<span>folio</span>.sio</div>
+    <ul class="nav-links">
+      <li><a href="#accueil">Accueil</a></li>
+      <li><a href="#formation">Formation</a></li>
+      <li><a href="#experiences">Expériences</a></li>
+      <li><a href="#competences">Compétences</a></li>
+      <li><a href="#veille">Veille</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <!-- Burger mobile -->
+    <button class="nav-burger" id="nav-burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ══════════════════════════ ACCUEIL ══════════════════════════ -->
+  <section id="accueil">
+    <div class="hero-bg">
+      <svg viewBox="0 0 1100 800" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#7fff6e" stroke-width="0.5"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#grid)"/>
+      </svg>
+    </div>
+
+    <div class="hero-tag">BTS SIO — Option SLAM / SISR</div>
+    <h1 class="hero-title">
+      Prénom Nom<br>
+      <span class="line2">Développeur</span>
+    </h1>
+    <p class="hero-subtitle">
+      Étudiant en BTS Services Informatiques aux Organisations, passionné par le développement web,
+      les réseaux et les nouvelles technologies. Disponible pour alternance et stage.
+    </p>
+    <div class="hero-cta">
+      <a href="#contact" class="btn btn-primary">Me contacter</a>
+      <a href="#formation" class="btn btn-outline">Voir mon parcours</a>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════ FORMATION ══════════════════════════ -->
+  <section id="formation">
+    <div class="section-header reveal">
+      <p class="section-label">// 01 — formation</p>
+      <h2 class="section-title">Mon parcours académique</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="timeline">
+
+      <div class="timeline-item reveal">
+        <div class="tl-year">2023 → 2025</div>
+        <div class="tl-content card">
+          <div class="tl-title">BTS Services Informatiques aux Organisations (SIO)</div>
+          <div class="tl-school">Lycée / CFA — Ville</div>
+          <div class="tl-desc">
+            Formation en deux ans axée sur le développement d'applications, la gestion des systèmes
+            et réseaux, et la cybersécurité. Option SLAM (Solutions Logicielles et Applications Métiers)
+            ou SISR (Solutions d'Infrastructure, Systèmes et Réseaux).
+          </div>
+          <div>
+            <span class="badge badge-green">SLAM</span>
+            <span class="badge badge-green">Développement Web</span>
+            <span class="badge badge-blue">Bases de données</span>
+            <span class="badge badge-blue">Réseaux</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="tl-year">2020 → 2023</div>
+        <div class="tl-content card">
+          <div class="tl-title">Baccalauréat Général / Professionnel</div>
+          <div class="tl-school">Lycée — Ville</div>
+          <div class="tl-desc">
+            Spécialités NSI (Numérique et Sciences Informatiques) et Mathématiques.
+            Obtenu avec mention Bien.
+          </div>
+          <div>
+            <span class="badge badge-green">Mention Bien</span>
+            <span class="badge badge-blue">NSI</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="tl-year">Certif.</div>
+        <div class="tl-content card">
+          <div class="tl-title">Certifications & Formations complémentaires</div>
+          <div class="tl-school">En ligne & Organismes</div>
+          <div class="tl-desc">
+            Cisco CCNA (en cours), PIX Foundation Certificate, formation SQL sur OpenClassrooms,
+            initiation à la cybersécurité.
+          </div>
+          <div>
+            <span class="badge badge-blue">CCNA</span>
+            <span class="badge badge-green">OpenClassrooms</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════ EXPÉRIENCES ══════════════════════════ -->
+  <section id="experiences">
+    <div class="section-header reveal">
+      <p class="section-label">// 02 — expériences</p>
+      <h2 class="section-title">Expériences professionnelles</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="exp-grid">
+
+      <div class="card reveal">
+        <div class="exp-header">
+          <div>
+            <div class="exp-role">Développeur Web — Stage</div>
+            <div class="exp-company">Entreprise XYZ — Ville</div>
+          </div>
+          <div class="exp-date">Jan → Fév 2025<br><span class="exp-duration">8 semaines</span></div>
+        </div>
+        <div class="exp-desc">
+          Stage de 2ème année de BTS SIO. Participation au développement d'une application
+          web interne de gestion des stocks.
+        </div>
+        <ul class="exp-tasks">
+          <li>Développement d'interfaces en HTML, CSS et JavaScript</li>
+          <li>Conception et interrogation de base de données MySQL</li>
+          <li>Création d'une API REST en PHP</li>
+          <li>Rédaction de documentation technique</li>
+        </ul>
+      </div>
+
+      <div class="card reveal">
+        <div class="exp-header">
+          <div>
+            <div class="exp-role">Technicien Helpdesk — Stage</div>
+            <div class="exp-company">DSI Collectivité — Ville</div>
+          </div>
+          <div class="exp-date">Avr → Mai 2024<br><span class="exp-duration">5 semaines</span></div>
+        </div>
+        <div class="exp-desc">
+          Stage de 1ère année. Support aux utilisateurs, maintenance du parc informatique
+          et administration réseau.
+        </div>
+        <ul class="exp-tasks">
+          <li>Support niveau 1 et 2 (ticketing GLPI)</li>
+          <li>Installation et configuration de postes Windows</li>
+          <li>Administration Active Directory (création comptes, GPO)</li>
+          <li>Câblage et configuration de switches</li>
+        </ul>
+      </div>
+
+      <div class="card reveal">
+        <div class="exp-header">
+          <div>
+            <div class="exp-role">Projet personnel — E-commerce</div>
+            <div class="exp-company">Projet étudiant</div>
+          </div>
+          <div class="exp-date">2024<br><span class="exp-duration">Personnel</span></div>
+        </div>
+        <div class="exp-desc">
+          Développement d'un site e-commerce fictif dans le cadre de projets scolaires,
+          avec panier d'achat et espace admin.
+        </div>
+        <ul class="exp-tasks">
+          <li>Frontend en HTML/CSS/JS + Bootstrap</li>
+          <li>Backend PHP avec sessions et authentification</li>
+          <li>Base de données MySQL (MCD, MLD, MPD)</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════ COMPÉTENCES ══════════════════════════ -->
+  <section id="competences">
+    <div class="section-header reveal">
+      <p class="section-label">// 03 — compétences</p>
+      <h2 class="section-title">Compétences & connaissances</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="skills-grid">
+
+      <div class="card reveal">
+        <div class="skill-group-title"><span class="ico">💻</span> Développement</div>
+        <div class="skill-item">
+          <div class="skill-name">HTML / CSS <span class="skill-pct">90%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">JavaScript <span class="skill-pct">70%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">PHP <span class="skill-pct">65%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">Python <span class="skill-pct">55%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="55"></div></div>
+        </div>
+      </div>
+
+      <div class="card reveal">
+        <div class="skill-group-title"><span class="ico">🗄️</span> Bases de données</div>
+        <div class="skill-item">
+          <div class="skill-name">MySQL / SQL <span class="skill-pct">75%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">Modélisation (MCD/MLD) <span class="skill-pct">70%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">MongoDB <span class="skill-pct">35%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="35"></div></div>
+        </div>
+      </div>
+
+      <div class="card reveal">
+        <div class="skill-group-title"><span class="ico">🌐</span> Réseaux & Systèmes</div>
+        <div class="skill-item">
+          <div class="skill-name">Windows Server / AD <span class="skill-pct">65%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">Linux (Debian) <span class="skill-pct">55%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="55"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">Cisco (routeurs/switches) <span class="skill-pct">50%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="50"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">TCP/IP, VLAN, DNS, DHCP <span class="skill-pct">60%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+        </div>
+      </div>
+
+      <div class="card reveal">
+        <div class="skill-group-title"><span class="ico">🛠️</span> Outils & Frameworks</div>
+        <div class="tools-list">
+          <span class="tool-chip">Git / GitHub</span>
+          <span class="tool-chip">VS Code</span>
+          <span class="tool-chip">Bootstrap</span>
+          <span class="tool-chip">GLPI</span>
+          <span class="tool-chip">VirtualBox</span>
+          <span class="tool-chip">Docker</span>
+          <span class="tool-chip">Figma</span>
+          <span class="tool-chip">Packet Tracer</span>
+          <span class="tool-chip">PhpMyAdmin</span>
+          <span class="tool-chip">Postman</span>
+          <span class="tool-chip">WordPress</span>
+          <span class="tool-chip">Trello</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════ VEILLE TECHNOLOGIQUE ══════════════════════════ -->
+  <section id="veille">
+    <div class="section-header reveal">
+      <p class="section-label">// 04 — veille technologique</p>
+      <h2 class="section-title">IA dans l'animation</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <p class="veille-intro reveal">
+      Suivi des dernières actualités sur l'intelligence artificielle appliquée à l'animation,
+      la génération d'images, la synthèse vidéo et la créativité computationnelle.
+      Flux RSS agrégés en temps réel depuis des sources spécialisées.
+    </p>
+
+    <!-- Stats -->
+    <div class="veille-stats reveal">
+      <div class="stat-item"><div class="stat-val" id="stat-articles">—</div><div class="stat-lbl">Articles</div></div>
+      <div class="stat-item"><div class="stat-val" id="stat-sources">6</div><div class="stat-lbl">Sources</div></div>
+      <div class="stat-item"><div class="stat-val" id="stat-today">—</div><div class="stat-lbl">Aujourd'hui</div></div>
+      <div class="stat-item"><div class="stat-val stat-live">En direct</div><div class="stat-lbl">Mise à jour</div></div>
+    </div>
+
+    <!-- Synthèse IA -->
+    <div class="ai-summary-wrap reveal">
+      <div class="ai-summary-header">
+        <span class="ai-ico">🤖</span>
+        <span class="ai-title">Synthèse de la veille — IA & Animation</span>
+        <span class="ai-badge">Auto-généré</span>
+      </div>
+      <div class="ai-summary-body">
+        <span id="ai-typing-target"></span>
+      </div>
+    </div>
+
+    <!-- Ticker -->
+    <div class="ticker-wrap reveal">
+      <span class="ticker-label">🔴 Live</span>
+      <div class="ticker-track" id="ticker-track">
+        <span class="ticker-item">Chargement des flux RSS<span class="t-src">…</span></span>
+      </div>
+    </div>
+
+    <!-- Filtres -->
+    <div class="veille-filters reveal">
+      <button class="filter-btn active" data-filter="all">Tous</button>
+      <button class="filter-btn" data-filter="generation">Génération</button>
+      <button class="filter-btn" data-filter="animation">Animation</button>
+      <button class="filter-btn" data-filter="modele">Modèles</button>
+      <button class="filter-btn" data-filter="outil">Outils</button>
+      <button class="filter-btn" data-filter="recherche">Recherche</button>
+    </div>
+
+    <!-- Grille articles -->
+    <div id="veille-loading" class="veille-loading">
+      <div class="loader-dots"><span></span><span></span><span></span></div>
+      Récupération des flux RSS en cours…
+    </div>
+    <div class="veille-grid" id="veille-grid"></div>
+
+  </section>
+
+  <!-- ══════════════════════════ CONTACT ══════════════════════════ -->
+  <section id="contact">
+    <div class="section-header reveal">
+      <p class="section-label">// 05 — contact</p>
+      <h2 class="section-title">Travaillons ensemble</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="contact-grid">
+
+      <div class="contact-info reveal">
+        <p class="contact-intro">
+          Je suis actuellement à la recherche d'un stage ou d'une alternance.
+          N'hésitez pas à me contacter pour toute opportunité ou question.
+        </p>
+        <a href="mailto:prenom.nom@email.com" class="contact-item">
+          <span class="contact-ico">✉️</span>
+          prenom.nom@email.com
+        </a>
+        <a href="tel:+33600000000" class="contact-item">
+          <span class="contact-ico">📱</span>
+          +33 6 00 00 00 00
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" class="contact-item">
+          <span class="contact-ico">🔗</span>
+          linkedin.com/in/prenom-nom
+        </a>
+        <a href="https://github.com" target="_blank" rel="noopener" class="contact-item">
+          <span class="contact-ico">🐙</span>
+          github.com/prenom-nom
+        </a>
+        <div class="contact-item contact-item--static">
+          <span class="contact-ico">📍</span>
+          Ville, France — Mobile en IDF
+        </div>
+      </div>
+
+      <div class="contact-form reveal">
+        <div class="form-group">
+          <label class="form-label" for="f-name">Nom complet</label>
+          <input id="f-name" type="text" class="form-input" placeholder="Jean Dupont">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="f-email">Email</label>
+          <input id="f-email" type="email" class="form-input" placeholder="jean@entreprise.fr">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="f-subject">Sujet</label>
+          <input id="f-subject" type="text" class="form-input" placeholder="Proposition de stage / alternance">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="f-message">Message</label>
+          <textarea id="f-message" class="form-textarea" placeholder="Votre message…"></textarea>
+        </div>
+        <button class="btn btn-primary btn-full" id="submit-btn">Envoyer le message</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <p>© 2025 — Prénom Nom · BTS SIO · Fait avec 💚 et du code</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/veille.js"></script>
+
+</body>
+</html>
